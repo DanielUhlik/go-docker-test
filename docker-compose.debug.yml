@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  go-docker-test:
+    image: go-docker-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
